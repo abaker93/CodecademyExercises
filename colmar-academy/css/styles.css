@@ -2,6 +2,7 @@ html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: #4a4a4a;
+	background-color: #f3f5f5;
 }
 
 img {
@@ -15,16 +16,19 @@ h4,
 h5,
 h6 {
 	font-weight: 900;
+	margin-bottom: 2rem;
 }
 
 h1 {
 	font-size: 3rem;
-	margin-bottom: 2rem;
 }
 
 h2 {
 	font-size: 2.5rem;
-	margin-bottom: 2rem;
+}
+
+h3 {
+	font-size: 2rem;
 }
 
 p,
@@ -35,6 +39,10 @@ a {
 
 a {
 	color: #4285f4;
+}
+
+.text-center {
+	text-align: center;
 }
 
 /* header */
@@ -150,6 +158,16 @@ nav ul li:last-child {
 	border-bottom: 1px solid #d8d8d8;
 }
 
+#information .info-block:last-child {
+	border-bottom: none;
+}
+
+#information .info-block:hover,
+#information .info-block:focus {
+	background-color: #d8d8d8;
+	transition: all ease-in-out 0.2s;
+}
+
 #information .info-block .info {
 	padding-left: 2rem;
 	align-self: center;
@@ -161,4 +179,40 @@ nav ul li:last-child {
 
 #information .info-block .info p {
 	margin-bottom: 2rem;
+}
+
+/* courses */
+
+#courses {
+	background-color: #eaebec;
+	padding: 3rem 10rem;
+}
+
+#courses .course-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 3rem;
+	margin-top: 3rem;
+}
+
+#courses .course-grid .course-block {
+	background-color: white;
+}
+
+#courses .course-grid .course-block .info {
+	padding: 3rem;
+}
+
+#courses .course-grid .course-block .info h3 {
+	margin-bottom: 1.2rem;
+}
+
+#courses .course-grid .course-block .info p.tag {
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+}
+
+/* thesis */
+
+#thesis {
 }
