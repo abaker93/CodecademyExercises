@@ -1,0 +1,93 @@
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #4a4a4a;
+}
+
+/* header */
+
+header {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	padding: 1rem 3rem;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: white;
+}
+
+.logo {
+	height: 32px;
+}
+
+.logo > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logo p {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+
+.logo p span {
+	font-weight: 400;
+	color: #9b9b9b;
+}
+
+nav {
+	text-align: right;
+	font-size: 1.25rem;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+/* banner */
+
+#banner {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-color: #d8d8d8;
+	padding: 3rem;
+	align-items: center;
+}
+
+#banner .left {
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 40rem;
+	margin-right: 5rem;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	margin-bottom: 2rem;
+}
+
+#banner .right p {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+#banner .right button {
+	cursor: pointer;
+	width: 100%;
+	background-color: #4a4a4a;
+	border: none;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	padding: 1rem;
+}
