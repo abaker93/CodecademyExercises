@@ -4,6 +4,39 @@ html {
 	color: #4a4a4a;
 }
 
+img {
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+p,
+a {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+a {
+	color: #4285f4;
+}
+
 /* header */
 
 header {
@@ -19,6 +52,10 @@ header {
 
 .logo {
 	height: 32px;
+}
+
+.logo img {
+	width: auto;
 }
 
 .logo > * {
@@ -55,7 +92,7 @@ nav ul li:last-child {
 
 #banner {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 7fr 5fr;
 	background-color: #d8d8d8;
 	padding: 3rem;
 	align-items: center;
@@ -70,14 +107,7 @@ nav ul li:last-child {
 	margin-right: 5rem;
 }
 
-h1 {
-	font-size: 3rem;
-	font-weight: 900;
-	margin-bottom: 2rem;
-}
-
 #banner .right p {
-	font-size: 1.5rem;
 	margin-bottom: 2rem;
 }
 
@@ -90,4 +120,45 @@ h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5rem;
 	padding: 1rem;
+}
+
+/* information */
+
+#information {
+	display: grid;
+	grid-template-columns: 7fr 5fr;
+}
+
+#information .left {
+	padding: 3rem;
+	border-right: 1px solid #d8d8d8;
+}
+
+#information .left img {
+	margin-bottom: 3rem;
+}
+
+#information p.byline {
+	margin-top: 2rem;
+	font-size: 1.2rem;
+}
+
+#information .info-block {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	padding: 3rem;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+#information .info-block .info {
+	padding-left: 2rem;
+	align-self: center;
+}
+
+#information .info-block .info h2 {
+	margin-bottom: 1rem;
+}
+
+#information .info-block .info p {
+	margin-bottom: 2rem;
 }
